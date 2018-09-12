@@ -17,9 +17,7 @@
     "lint": "eslint ./source/js ./webpack.config.js -f table --ext .js --ext .jsx || true",
     "preview": "rm -rf ./build && NODE_ENV=\"production\" webpack-dashboard -t 'Preview Mode - Showflix' -- webpack-dev-server",
     "hook-add": "prepush install",
-    "hook-remove": "prepush remove",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "hook-remove": "prepush remove"
   },
   "devDependencies": {
     "assert-plus": "^1.0.0",
@@ -63,7 +61,6 @@
     "es6-promise": "^3.3.1",
     "fast-deep-equal": "^1.0.0",
     "file-loader": "^2.0.0",
-    "gh-pages": "^1.2.0",
     "immutable": "^3.8.1",
     "is-utf8": "^0.2.1",
     "isomorphic-fetch": "^2.2.1",
