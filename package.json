@@ -1,5 +1,5 @@
 {
-  "name": "Dashboard",
+  "name": "Showflix",
   "version": "1.0.0",
   "private": false,
   "license": "MIT",
@@ -9,12 +9,12 @@
     "terminate": "pkill -f node_modules/.bin/webpack-dev-server",
     "production": " npm run build && NODE_ENV=production npm start",
     "start": "webpack-dev-server",
-    "dev": "webpack-dashboard -t 'Dashboard' -- webpack-dev-server",
+    "dev": "webpack-dashboard -t 'Showflix' -- webpack-dev-server",
     "build": "rm -rf ./build && NODE_ENV=\"production\" webpack",
     "buildTest": "rm -rf ./build && NODE_ENV=\"production\" webpack",
     "lint-break-on-errors": "eslint ./source/js ./webpack.config.js -f table --ext .js --ext .jsx",
     "lint": "eslint ./source/js ./webpack.config.js -f table --ext .js --ext .jsx || true",
-    "preview": "rm -rf ./build && NODE_ENV=\"production\" webpack-dashboard -t 'Preview Mode - Dashboard' -- webpack-dev-server",
+    "preview": "rm -rf ./build && NODE_ENV=\"production\" webpack-dashboard -t 'Preview Mode - Showflix' -- webpack-dev-server",
     "hook-add": "prepush install",
     "hook-remove": "prepush remove"
   },
@@ -76,7 +76,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
   },
-  "description": "Dashboard",
+  "description": "Showflix",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Stanko/react-redux-webpack2-boilerplate.git"
